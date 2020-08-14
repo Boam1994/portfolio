@@ -1,0 +1,253 @@
+/* global */
+body {
+  font-family: roboto, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+/* main-container */
+.mainContainer {
+  /*margin: 2em 7em;*/
+}
+/* global-header */
+.accueil__mainHeader--mainNav {
+  background-color: #35424a;
+  border-bottom: 2px #e8491d solid;
+  z-index: 9999;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.accueil__mainHeader--mainNav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 0%;
+  /*margin: 2em 7em;*/
+  list-style: none;
+  margin: 0px;
+}
+.accueil__mainHeader--mainNav a {
+  text-decoration: none;
+  padding: 1em;
+  text-align: center;
+  display: inline-block;
+  color: #ffffff;
+}
+.accueil__mainHeader--mainMenu li.current a {
+  color: #eb6505;
+}
+/* contenu accueil */
+.accueil__content {
+  display: flex;
+  align-items: center;
+  height: 700px;
+  background: url(../Images/background.jpg) no-repeat;
+  background-size: cover;
+  color: #ffffff;
+  padding-left: 300px;
+}
+.accueil__content h1 {
+  font-size: 55px;
+  /* margin-bottom: 15px; */
+  margin-top: 0;
+  padding-top: 75px;
+}
+.accueil__content p {
+  font-size: 30px;
+}
+.accueil__content a {
+  color: #ffffff;
+  border-radius: 15px;
+  background-color: #eb6505;
+  padding: 10px 15px;
+  border: none;
+  text-decoration: none;
+}
+/*a propos */
+.apropos__container {
+  margin: 0 7em;
+}
+/* first col */
+.apropos__container--cssGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+/* global css items */
+.informations h1,
+.competences h1,
+.formations h1,
+.centreInterets h1 {
+  color: #e8491d;
+  padding-bottom: 10px;
+}
+/* items */
+.informations {
+  padding-bottom: 25px;
+}
+
+/* section compétences */
+.competences {
+  padding-top: 23px;
+}
+.compétences__grid {
+  display: flex;
+}
+.competences img,
+.formations img {
+  width: 70px;
+}
+/* second col */
+.apropos__container__cssGrid--secondtCol img {
+  width: 350px;
+  justify-self: center;
+  padding-top: 150px;
+}
+
+/* third col */
+.formations {
+  padding-bottom: 70px;
+}
+.formations__grid {
+  display: flex;
+  flex-direction: row;
+}
+.formations__grid--frontend {
+  padding-right: 30px;
+}
+.formations__grid--droit img {
+  width: 80px;
+}
+.formations__grid--droit p {
+  padding-top: 10px;
+}
+/* section centre d'intérets */
+.centreInterets__grid {
+  display: flex;
+}
+.centreInterets img {
+  width: 70px;
+  padding-right: 55px;
+}
+
+/* css page expériences */
+#expériences {
+  margin-bottom: 50px;
+}
+.experiences__container {
+  margin: 0 7em;
+}
+.experiences__container--grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: ;
+}
+/* première colonne expériences : sirius hub*/
+.experiences__container__grid--villeHospitaliere h2 {
+  color: #ffffff;
+  background-color: #e8491d;
+  width: 100px;
+  padding: 9px 16px;
+  text-align: center;
+  position: relative;
+  left: 210px;
+  bottom: -43px;
+}
+.experiences__container__grid--villeHospitaliere div {
+  background-color: #35424a;
+  color: #ffffff;
+  height: 290px;
+  width: 310px;
+  padding: 50px 25px;
+}
+.siriusHub h1 {
+  font-size: 35px;
+  line-height: 3em;
+}
+/* deuxième colonne expériences : sirius coop*/
+.experiences__container__grid--siriusCoop h2 {
+  color: #ffffff;
+  background-color: #e8491d;
+  width: 100px;
+  padding: 9px 16px;
+  text-align: center;
+  position: relative;
+  left: 210px;
+  bottom: -43px;
+}
+.experiences__container__grid--siriusCoop div {
+  background-color: #35424a;
+  color: #ffffff;
+  height: 290px;
+  width: 310px;
+  padding: 50px 25px;
+}
+.siriusCoop h1 {
+  font-size: 35px;
+  line-height: 3em;
+}
+
+/* section page contact */
+#contact {
+  background-color: #35424a;
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+/* partie text */
+.contact__container {
+  margin: 0 7em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.contact__container--callToAction {
+  width: 50%;
+  color: #ffffff;
+}
+.contact__container--callToAction h1 {
+  font-size: 35px;
+  font-weight: bold;
+}
+.contact__container--callToAction span {
+  color: #e8491d;
+}
+.contact__container--callToAction p {
+  font-size: 20px;
+  line-height: 1em;
+}
+/* partie formulaire */
+.contact__container--formulaire {
+  width: 400px;
+  padding-left: 25px;
+}
+.contact__container--formulaire label {
+  color: #ffffff;
+  width: 90px;
+}
+.contact__container--formulaire input {
+  width: 300px;
+  height: 3em;
+}
+.contact__container--formulaire textarea {
+  width: 300px;
+  height: 7em;
+}
+.contact__container--formulaire button {
+  background-color: #e8491d;
+  color: #ffffff;
+  padding: 15px 35px;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+}
+/* footer */
+.main-footer {
+  background-color: #e8491d;
+  width: 100%;
+  height: 50px;
+  padding-top: 15px;
+}
+.main-footer p {
+  color: #ffffff;
+  text-align: center;
+  margin: 0;
+}
